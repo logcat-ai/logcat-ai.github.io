@@ -1,0 +1,155 @@
+@import url("./style/colors.css");
+@import url("./style/animate.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  user-select: none;
+}
+
+.landing {
+  background: url("./assets/black-curve.svg");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  background-color: var(--color-white);
+  padding: 2rem 4rem;
+
+  @media screen and (max-width: 900px) {
+    background-position: right;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 750px) {
+    background-position: 60%;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 900px) {
+    color: var(--color-white);
+    text-align: center;
+    background-color: var(--color-black);
+  }
+}
+
+.demo {
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @media screen and (max-width: 750px) {
+    padding-bottom: 5rem;
+  }
+}
+
+.before-after-slider-container {
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  background-color: var(--color-black);
+  border: 5px solid var(--color-white);
+  width: 80%;
+
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+  }
+}
+
+.header {
+  font-size: 5rem;
+  font-weight: 400;
+  width: 100%;
+
+  @media screen and (max-width: 750px) {
+    font-size: 3rem;
+  }
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: 700;
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  div {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 900px) {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    align-items: center;
+    margin-top: 0;
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 1rem 5rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 5px solid var(--color-black);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 5px solid var(--color-black);
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 90%;
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  @media screen and (max-width: 750px) {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 3rem;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
