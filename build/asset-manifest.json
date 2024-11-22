@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/logcatai-repo/static/css/main.80fd7085.css",
-    "main.js": "/logcatai-repo/static/js/main.7f50274d.js",
-    "static/media/pre-logcat.png": "/logcatai-repo/static/media/pre-logcat.714a509be592e33f83dc.png",
-    "static/media/post-logcat.png": "/logcatai-repo/static/media/post-logcat.7bf883ddfe2ba893c21a.png",
-    "index.html": "/logcatai-repo/index.html",
-    "static/media/black-curve.svg": "/logcatai-repo/static/media/black-curve.6500a17e85fee23be0d1.svg",
-    "main.80fd7085.css.map": "/logcatai-repo/static/css/main.80fd7085.css.map",
-    "main.7f50274d.js.map": "/logcatai-repo/static/js/main.7f50274d.js.map"
+    "main.css": "/logcatai-landing/static/css/main.af402be5.css",
+    "main.js": "/logcatai-landing/static/js/main.6cd37944.js",
+    "static/media/pre-logcat.png": "/logcatai-landing/static/media/pre-logcat.714a509be592e33f83dc.png",
+    "static/media/post-logcat.png": "/logcatai-landing/static/media/post-logcat.7bf883ddfe2ba893c21a.png",
+    "index.html": "/logcatai-landing/index.html",
+    "static/media/black-curve.svg": "/logcatai-landing/static/media/black-curve.6500a17e85fee23be0d1.svg",
+    "main.af402be5.css.map": "/logcatai-landing/static/css/main.af402be5.css.map",
+    "main.6cd37944.js.map": "/logcatai-landing/static/js/main.6cd37944.js.map"
   },
   "entrypoints": [
-    "static/css/main.80fd7085.css",
-    "static/js/main.7f50274d.js"
+    "static/css/main.af402be5.css",
+    "static/js/main.6cd37944.js"
   ]
 }
