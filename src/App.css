@@ -63,6 +63,7 @@
   background-color: var(--color-black);
   border: 5px solid var(--color-white);
   width: 80%;
+  transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: 1200px) {
     width: 90%;
@@ -152,4 +153,16 @@ button {
     flex-direction: column;
     flex-direction: column-reverse;
   }
+}
+
+.before-after-slider__delimiter {
+  animation: wiggle-slider 1.5s ease-in-out;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.before-after-slider__second-photo-container {
+  animation: wiggle-image 1.5s ease-in-out;
 }

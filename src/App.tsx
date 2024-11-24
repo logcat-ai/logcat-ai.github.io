@@ -44,6 +44,7 @@ function App() {
                 onChangePercentPosition={(newPosition) => {
                   setSliderPosition(newPosition);
                 }}
+                className="before-after-slider"
               />
             </div>
           </div>
