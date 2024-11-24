@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/logcatai-landing/static/css/main.d56168f8.css",
-    "main.js": "/logcatai-landing/static/js/main.edd1c383.js",
+    "main.css": "/logcatai-landing/static/css/main.4298d9de.css",
+    "main.js": "/logcatai-landing/static/js/main.3e566838.js",
     "static/media/pre-logcat.png": "/logcatai-landing/static/media/pre-logcat.714a509be592e33f83dc.png",
     "static/media/post-logcat.png": "/logcatai-landing/static/media/post-logcat.7bf883ddfe2ba893c21a.png",
     "index.html": "/logcatai-landing/index.html",
     "static/media/black-curve.svg": "/logcatai-landing/static/media/black-curve.6500a17e85fee23be0d1.svg",
-    "main.d56168f8.css.map": "/logcatai-landing/static/css/main.d56168f8.css.map",
-    "main.edd1c383.js.map": "/logcatai-landing/static/js/main.edd1c383.js.map"
+    "main.4298d9de.css.map": "/logcatai-landing/static/css/main.4298d9de.css.map",
+    "main.3e566838.js.map": "/logcatai-landing/static/js/main.3e566838.js.map"
   },
   "entrypoints": [
-    "static/css/main.d56168f8.css",
-    "static/js/main.edd1c383.js"
+    "static/css/main.4298d9de.css",
+    "static/js/main.3e566838.js"
   ]
 }
