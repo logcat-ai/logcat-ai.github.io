@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/logcatai-landing/static/css/main.39cb89e4.css",
+    "main.css": "/logcatai-landing/static/css/main.74901134.css",
     "main.js": "/logcatai-landing/static/js/main.a79f0fc5.js",
     "static/media/pre-logcat.png": "/logcatai-landing/static/media/pre-logcat.714a509be592e33f83dc.png",
     "static/media/post-logcat.png": "/logcatai-landing/static/media/post-logcat.7bf883ddfe2ba893c21a.png",
     "index.html": "/logcatai-landing/index.html",
     "static/media/green-curve.svg": "/logcatai-landing/static/media/green-curve.a027398a86a40f9b9e3f.svg",
     "static/media/black-curve.svg": "/logcatai-landing/static/media/black-curve.6500a17e85fee23be0d1.svg",
-    "main.39cb89e4.css.map": "/logcatai-landing/static/css/main.39cb89e4.css.map",
+    "main.74901134.css.map": "/logcatai-landing/static/css/main.74901134.css.map",
     "main.a79f0fc5.js.map": "/logcatai-landing/static/js/main.a79f0fc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.39cb89e4.css",
+    "static/css/main.74901134.css",
     "static/js/main.a79f0fc5.js"
   ]
 }
