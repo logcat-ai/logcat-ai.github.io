@@ -155,14 +155,6 @@ button {
   }
 }
 
-.before-after-slider__delimiter {
-  animation: wiggle-slider 1.5s ease-in-out;
-  cursor: grab;
-  &:active {
-    cursor: grabbing;
-  }
-}
-
-.before-after-slider__second-photo-container {
-  animation: wiggle-image 1.5s ease-in-out;
+.disabled {
+  cursor: not-allowed;
 }

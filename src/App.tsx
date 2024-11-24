@@ -1,10 +1,36 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import ReactBeforeSliderComponent from "react-before-after-slider-component";
 import "react-before-after-slider-component/dist/build.css";
 
 function App() {
-  const [sliderPosition, setSliderPosition] = useState(50);
+  const [sliderPosition, setSliderPosition] = useState(100);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    let isDecreasing = true;
+    const shutterSpeed = 1;
+    const increment = 0.25;
+
+    const animation = setInterval(() => {
+      setIsAnimating(true);
+      setSliderPosition((prev) => {
+        if (isDecreasing) {
+          if (prev === increment) {
+            isDecreasing = false;
+          }
+          return prev - increment;
+        }
+        if (prev === 50) {
+          clearInterval(animation);
+          setIsAnimating(false);
+        }
+        return prev + increment;
+      });
+    }, shutterSpeed);
+
+    return () => clearInterval(animation);
+  }, []);
 
   return (
     <div className="landing">
@@ -42,9 +68,12 @@ function App() {
                 }}
                 currentPercentPosition={sliderPosition}
                 onChangePercentPosition={(newPosition) => {
+                  if (isAnimating) {
+                    return;
+                  }
                   setSliderPosition(newPosition);
                 }}
-                className="before-after-slider"
+                className={isAnimating ? "disabled" : ""}
               />
             </div>
           </div>

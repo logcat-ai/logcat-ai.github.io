@@ -13,33 +13,3 @@
     transform: translateY(0);
   }
 }
-
-@keyframes wiggle-slider {
-  0% {
-    transform: translateX(0px);
-  }
-  25% {
-    transform: translateX(10px);
-  }
-  75% {
-    transform: translateX(-10px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-@keyframes wiggle-image {
-  0% {
-    width: 50%;
-  }
-  25% {
-    width: 51%;
-  }
-  75% {
-    width: 49%;
-  }
-  100% {
-    width: 50%;
-  }
-}
