@@ -35,16 +35,35 @@ function App() {
   return (
     <div className="landing">
       <div>
-        <h1 className="header">logcat.ai</h1>
+        <h1 className="header">
+          logcat.<span className="secondary">ai</span>
+        </h1>
         <div className="body">
           <div className="text fade-in">
             <div className="description">
               <div>
-                <p>make sense of your logcat.</p>
-                <p>streamline debugging.</p>
-                <p>develop faster.</p>
+                <h1>
+                  <strong className="secondary">
+                    Stop Guessing, Start Debugging
+                  </strong>
+                  : AI Insights for Your Logcat.
+                </h1>
+                <p>
+                  logcat.ai analyzes your logs, detects critical errors, and
+                  delivers actionable insights so you can debug faster and build
+                  better
+                </p>
               </div>
-              <h1>coming soon.</h1>
+              <div className="launching">
+                LAUNCHING SPRING 2025
+                <hr />
+              </div>
+              <input
+                accept="email"
+                type="email"
+                className="email-input"
+                placeholder="yourname@email.com"
+              />
               <button
                 onClick={() => {
                   window.open(
@@ -53,7 +72,7 @@ function App() {
                   );
                 }}
               >
-                get in touch
+                Join the waitlist
               </button>
             </div>
           </div>
