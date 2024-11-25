@@ -58,12 +58,6 @@ function App() {
                 LAUNCHING SPRING 2025
                 <hr />
               </div>
-              <input
-                accept="email"
-                type="email"
-                className="email-input"
-                placeholder="yourname@email.com"
-              />
               <button
                 onClick={() => {
                   window.open(
