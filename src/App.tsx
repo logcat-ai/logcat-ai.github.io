@@ -50,12 +50,11 @@ function App() {
                   <strong className="secondary">
                     Stop Guessing, Start Debugging
                   </strong>
-                  : AI Insights for Your Logcat.
+                  : Al Insights for Android Logcat.
                 </h1>
                 <p>
-                  logcat.ai analyzes your logs, detects critical errors, and
-                  delivers actionable insights so you can debug faster and build
-                  better
+                  Master Android logs at every level: Smart analysis for app and
+                  OS developers to build with confidence
                 </p>
               </div>
               <div className="launching">
