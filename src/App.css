@@ -59,12 +59,16 @@
 
 .before-after-slider-container {
   overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  background-color: var(--color-black);
-  border: 5px solid var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+  background-color: var(--color-white);
+  border: 10px solid var(--color-white);
   width: 80%;
   transition: all 0.2s ease-in-out;
+
+  img {
+    border-radius: 5px;
+  }
 
   @media screen and (max-width: 1200px) {
     width: 90%;
@@ -75,6 +79,15 @@
   font-size: 4rem;
   font-weight: 700;
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .logo {
+    /* Icon size will relative to font-size of .header */
+    width: 1em;
+    height: 1em;
+  }
 
   @media screen and (max-width: 900px) {
     padding-left: 2rem;

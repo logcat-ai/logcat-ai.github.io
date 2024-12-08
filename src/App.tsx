@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import ReactBeforeSliderComponent from "react-before-after-slider-component";
 import "react-before-after-slider-component/dist/build.css";
+import { Terminal } from "lucide-react";
 
 function App() {
   const [sliderPosition, setSliderPosition] = useState(100);
@@ -10,7 +11,7 @@ function App() {
   useEffect(() => {
     let isDecreasing = true;
     const shutterSpeed = 1;
-    const increment = 0.25;
+    const increment = 0.5;
 
     const animation = setInterval(() => {
       setIsAnimating(true);
@@ -36,7 +37,10 @@ function App() {
     <div className="landing">
       <div>
         <h1 className="header">
-          logcat.<span className="secondary">ai</span>
+          <Terminal className="logo" />
+          <span>
+            logcat.<span className="secondary">ai</span>
+          </span>
         </h1>
         <div className="body">
           <div className="text fade-in">
