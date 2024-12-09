@@ -36,7 +36,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://logcat-ai.github.io/logcatai-landing",
+  "homepage": "https://logcat-ai.github.io/",
   "browserslist": {
     "production": [
       ">0.2%",
