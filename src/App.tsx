@@ -96,7 +96,7 @@ function App() {
                     </div>
                 </div>
                 <div className="footer fade-in">
-                    Copyright © 2025 - logcat.ai
+                    © 2025. All Rights Reserved.
                 </div>
             </div>
         </div>
