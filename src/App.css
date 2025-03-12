@@ -228,6 +228,8 @@ button {
 .privacy-policy-header {
     font-weight: 700;
     color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
 }
 
 .privacy-policy-section {
@@ -245,6 +247,10 @@ button {
 
 .privacy-policy-footer {
     text-align: right;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     span {
         font-weight: 700;
         font-size: 14px;

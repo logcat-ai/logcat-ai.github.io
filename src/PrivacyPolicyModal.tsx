@@ -1,3 +1,4 @@
+import { XCircle } from "lucide-react";
 import { Modal } from "react-responsive-modal";
 
 interface PrivacyPolicyModalProps {
@@ -10,16 +11,35 @@ const PrivacyPolicyModal = ({
     onCloseModal,
 }: PrivacyPolicyModalProps) => {
     return (
-        <Modal open={open} onClose={onCloseModal} center showCloseIcon={false}>
+        <Modal
+            open={open}
+            onClose={onCloseModal}
+            center
+            showCloseIcon={false}
+            focusTrapped={false}
+        >
             <div className="privacy-policy">
                 <div
                     style={{ marginBottom: "1rem" }}
                     className="privacy-policy-header"
                 >
-                    <h2>Privacy Policy</h2>
-                    <h3 style={{ fontWeight: "400" }}>
-                        Last updated: March 8, 2025
-                    </h3>
+                    <div>
+                        <h2>Privacy Policy</h2>
+                        <h3 style={{ fontWeight: "400" }}>
+                            Last updated: March 8, 2025
+                        </h3>
+                    </div>
+                    <span
+                        style={{
+                            cursor: "pointer",
+                        }}
+                    >
+                        <XCircle
+                            onClick={onCloseModal}
+                            size={24}
+                            color="var(--color-secondary)"
+                        />
+                    </span>
                 </div>
                 <div style={{ maxHeight: "60vh", overflowY: "auto" }}>
                     <div className="privacy-policy-section">
@@ -302,9 +322,6 @@ const PrivacyPolicyModal = ({
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="privacy-policy-footer">
-                    <span onClick={onCloseModal}>Close</span>
                 </div>
             </div>
         </Modal>
