@@ -3,6 +3,7 @@ import "./App.css";
 import ReactBeforeSliderComponent from "react-before-after-slider-component";
 import "react-before-after-slider-component/dist/build.css";
 import { Terminal } from "lucide-react";
+import PrivacyPolicyModal from "./PrivacyPolicyModal";
 
 function App() {
     const [sliderPosition, setSliderPosition] = useState(100);
@@ -32,6 +33,11 @@ function App() {
 
         return () => clearInterval(animation);
     }, []);
+
+    const [open, setOpen] = useState(false);
+
+    const onOpenModal = () => setOpen(true);
+    const onCloseModal = () => setOpen(false);
 
     return (
         <div className="landing">
@@ -96,8 +102,13 @@ function App() {
                     </div>
                 </div>
                 <div className="footer fade-in">
-                    © 2025. All Rights Reserved.
+                    <span>© 2025. All Rights Reserved</span>
+                    <span>.</span>
+                    <span onClick={onOpenModal} style={{ cursor: "pointer" }}>
+                        Privacy Policy
+                    </span>
                 </div>
+                <PrivacyPolicyModal onCloseModal={onCloseModal} open={open} />
             </div>
         </div>
     );
