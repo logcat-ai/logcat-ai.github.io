@@ -73,7 +73,7 @@ function App() {
                                             <strong className="secondary">
                                                 Stop Guessing, Start Debugging
                                             </strong>
-                                            : Al Insights for Android Logcat.
+                                            : AI Insights for Android Logcat.
                                         </h1>
                                         <p>
                                             Master Android logs at every level:
