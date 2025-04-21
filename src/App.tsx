@@ -81,10 +81,6 @@ function App() {
                                             developers to build with confidence
                                         </p>
                                     </div>
-                                    <div className="launching">
-                                        LAUNCHING SPRING 2025
-                                        <hr />
-                                    </div>
                                     <button
                                         onClick={() => {
                                             // window.open(
@@ -93,8 +89,12 @@ function App() {
                                             // );
                                             setShowContactForm(true);
                                         }}
+                                        style={{
+                                            textTransform: "uppercase",
+                                            fontWeight: 600,
+                                        }}
                                     >
-                                        Join the waitlist
+                                        Request Early Access
                                     </button>
                                 </div>
                             </div>
