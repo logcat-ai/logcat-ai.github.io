@@ -52,16 +52,13 @@ const ContactForm: React.FC<ContactFormIProps> = ({ closeModal }) => {
 
             setIsSubmitting(true);
             // Send data to API
-            const response = await fetch(
-                "https://dev.api.logcat.ai/api/contact",
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(contactData),
-                }
-            );
+            const response = await fetch("https://api.logcat.ai/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(contactData),
+            });
 
             if (!response.ok) {
                 throw new Error("Network response was not ok");
